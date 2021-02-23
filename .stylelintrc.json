@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin",
+    "stylelint-group-selectors"
+  ],
+  "rules": {
+    "order/properties-order": [],
+    "order/properties-alphabetical-order": null,
+    "plugin/stylelint-group-selectors": true,
+    "plugin/rational-order": [
+      true,
+      {
+        "border-in-box-model": false,
+        "empty-line-between-groups": false
+      }
+    ]
+  }
+}
